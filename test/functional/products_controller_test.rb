@@ -75,4 +75,51 @@ class ProductsControllerTest < ActionController::TestCase
 
     assert_redirected_to products_path
   end
+  
+  test "should error on title" do
+    assert_difference('Product.count', 0) do
+      post :create, :product => {
+#        :title        => 'awesome product',
+        :description  => 'awesome product description',
+        :image_url    => 'http://example.com/foo.gif',
+        :price        => '100'
+      }
+    end
+    
+  end
+  
+  test "should error on description" do
+    assert_difference('Product.count', 0) do
+      post :create, :product => {
+        :title        => 'awesome product',
+#        :description  => 'awesome product description',
+        :image_url    => 'http://example.com/foo.gif',
+        :price        => '100'
+      }
+    end
+    
+  end
+  
+  test "should error on image format" do
+    assert_difference('Product.count', 0) do
+      post :create, :product => {
+        :title        => 'awesome product',
+        :description  => 'awesome product description',
+        :image_url    => 'http://example.com/foo',
+        :price        => '100'
+      }
+    end
+  end
+  
+  test "should error on price less than .01" do
+    assert_difference('Product.count', 0) do
+      post :create, :product => {
+        :title        => 'awesome product',
+        :description  => 'awesome product description',
+        :image_url    => 'http://example.com/foo.gif',
+        :price        => '.001'
+      }
+    end
+  end
+  
 end

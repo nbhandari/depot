@@ -1284,3 +1284,2511 @@ Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/
 [0m
   [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (70.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (81.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (90.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (10.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (90.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 08:14:34) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 100ms (View: 70, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 08:14:34) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 08:14:34) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 08:14:36) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 08:14:36) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 08:14:36) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:14:43) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 08:14:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/products/1]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:14:56) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:35:32) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-01-31 08:35:36) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 08:36:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3", "price"=>".001", "title"=>"Product 3", "description"=>"Third product"}}
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 08:36:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3.jpg", "price"=>".01", "title"=>"Product 3", "description"=>"Third product"}}
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 91ms (View: 71, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 08:36:32) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3.jpg", "price"=>"0.01", "title"=>"Product 3", "description"=>"Third product"}}
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 260ms (View: 160, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 08:36:41) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3.jpg", "price"=>".1", "title"=>"Product 3", "description"=>"Third product"}}
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 08:36:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3.jpg", "price"=>"1", "title"=>"Product 3", "description"=>"Third product"}}
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3') LIMIT 1[0m
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('image3.jpg', '2009-01-31 16:36:49', 'Product 3', 100, 'Third product', '2009-01-31 16:36:49')[0m
+Redirected to #<Product:0x481735c>
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 08:36:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/3]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 08:41:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/3]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 08:41:56) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/3]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:02) [GET]
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:04) [GET]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:05) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:06) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 221ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:07) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:09) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:09) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:10) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:10) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 30, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:11) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:11) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 111ms (View: 81, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:13) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:13) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:14) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2009-01-31 08:42:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/3/edit]
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2009-01-31 08:42:26) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3.jpg", "price"=>"1", "title"=>"Product 3", "description"=>"Third product"}, "id"=>"3"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3' AND "products".id <> 3) LIMIT 1[0m
+  [4;36;1mProduct Update (0.0ms)[0m   [0;1mUPDATE "products" SET "price" = 1, "updated_at" = '2009-01-31 16:42:26' WHERE "id" = 3[0m
+Redirected to #<Product:0x4698f08>
+Completed in 250ms (DB: 0) | 302 Found [http://localhost/products/3]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 08:42:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 10, DB: 10) | 200 OK [http://localhost/products/3]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:42:33) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2009-01-31 08:42:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/3/edit]
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2009-01-31 08:43:00) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3.jpg", "price"=>".01", "title"=>"Product 3", "description"=>"Third product"}, "id"=>"3"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3' AND "products".id <> 3) LIMIT 1[0m
+  [4;36;1mProduct Update (0.0ms)[0m   [0;1mUPDATE "products" SET "price" = 0, "updated_at" = '2009-01-31 16:43:00' WHERE "id" = 3[0m
+Redirected to #<Product:0x453722c>
+Completed in 371ms (DB: 0) | 302 Found [http://localhost/products/3]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 08:43:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/products/3]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:43:07) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:40) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:41) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:41) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:42) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:42) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:42) [GET]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 341ms (View: 221, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:43) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:46:43) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:48:28) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 08:48:29) [GET]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2009-01-31 08:48:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/products/3/edit]
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2009-01-31 08:48:39) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"image3.jpg", "price"=>"1", "title"=>"Product 3", "description"=>"Third product"}, "id"=>"3"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Product 3' AND "products".id <> 3) LIMIT 1[0m
+  [4;36;1mProduct Update (0.0ms)[0m   [0;1mUPDATE "products" SET "price" = 1, "updated_at" = '2009-01-31 16:48:39' WHERE "id" = 3[0m
+Redirected to #<Product:0x460805c>
+Completed in 120ms (DB: 0) | 302 Found [http://localhost/products/3]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 08:48:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/products/3]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 08:48:47) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 08:48:47) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 08:48:47) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 08:48:47) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 09:04:33) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:04:33) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:04:33) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:04:33) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 09:04:34) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:04:34) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:04:34) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:04:34) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 09:24:04) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:24:04) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:24:04) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:24:04) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 09:36:19) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:36:19) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:36:19) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:36:19) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 09:44:23) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:44:23) [GET]
+
+
+ActionController::RoutingError (No route matches "/stylesheets/depot.css" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:44:23) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:44:23) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:44:23) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:44:23) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 09:48:52) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:48:53) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:48:53) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:48:53) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:48:53) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-01-31 09:51:39) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:51:39) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:51:39) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/img1.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:51:39) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/prod2.png" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-31 09:51:39) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/image3.jpg" with {:method=>:get}):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-01-31 09:53:29) [POST]
+  Parameters: {"authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "id"=>"1"}
+
+
+ActionController::UnknownAction (No action responded to add_to_cart. Actions: index):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (101.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (90.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:15:32) [GET]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-01-31 10:15:34) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:15:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"", "price"=>"", "title"=>"", "description"=>""}}
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.*):
+    /app/controllers/products_controller.rb:45:in `create'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (60.0ms)
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.0ms)
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:16:23) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"", "price"=>"", "title"=>"P1", "description"=>""}}
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.*):
+    /app/controllers/products_controller.rb:45:in `create'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (61.0ms)
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.0ms)
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:28) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:29) [GET]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:29) [GET]
+  [4;35;1mProduct Load (20.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 220ms (View: 120, DB: 20) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:30) [GET]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:31) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:31) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:31) [GET]
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:16:32) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-01-31 10:16:35) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:16:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"", "price"=>"", "title"=>"P1", "description"=>""}}
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.*):
+    /app/controllers/products_controller.rb:45:in `create'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (210.0ms)
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.0ms)
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:17:39) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"img.png", "price"=>"1", "title"=>"P1", "description"=>"P1"}}
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'P1') LIMIT 1[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('img.png', '2009-01-31 18:17:39', 'P1', 100, 'P1', '2009-01-31 18:17:39')[0m
+Redirected to #<Product:0x483594c>
+Completed in 100ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2009-01-31 10:17:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/products/4]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:17:44) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-31 10:17:48) [GET]
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 41ms (View: 20, DB: 10) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-01-31 10:17:53) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:18:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"abc", "price"=>".01", "title"=>"P2", "description"=>"P2"}}
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'P2') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 50ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (81.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (80.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (161.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (80.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (90.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (80.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (81.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090126053809')[0m
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:52:07) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"abc", "price"=>"0", "title"=>"", "description"=>"P2"}}
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = '') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 51ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:52:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"abc", "price"=>"0", "title"=>"", "description"=>""}}
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = '') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 200ms (View: 20, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:52:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"", "price"=>"", "title"=>"", "description"=>""}}
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.*):
+    /app/controllers/products_controller.rb:45:in `create'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (60.0ms)
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (10.0ms)
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:52:35) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"a", "price"=>"", "title"=>"", "description"=>""}}
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.*):
+    /app/controllers/products_controller.rb:45:in `create'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (60.0ms)
+Rendered C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.0ms)
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:52:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"", "price"=>"1", "title"=>"", "description"=>""}}
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = '') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 40ms (View: 10, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-01-31 10:52:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b4c157776ab0c281531ee7475d4b10c91a3572a9", "product"=>{"image_url"=>"", "price"=>".1", "title"=>"", "description"=>""}}
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = '') LIMIT 1[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 100ms (View: 70, DB: 0) | 200 OK [http://localhost/products]
