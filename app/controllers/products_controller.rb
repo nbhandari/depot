@@ -41,9 +41,7 @@ class ProductsController < ApplicationController
   # POST /products.xml
   def create
     @product = Product.new(params[:product])
-    
-    @product.price *= 100
-    
+        
     respond_to do |format|
       if @product.save
         flash[:notice] = 'Product was successfully created.'

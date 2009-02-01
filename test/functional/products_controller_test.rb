@@ -72,7 +72,6 @@ class ProductsControllerTest < ActionController::TestCase
     assert_difference('Product.count', -1) do
       delete :destroy, :id => products(:one).id
     end
-
     assert_redirected_to products_path
   end
   
@@ -86,6 +85,12 @@ class ProductsControllerTest < ActionController::TestCase
       }
     end
     
+    assert product = assigns(:product)
+    assert !product.valid?
+    product.errors.on(:title)
+    
+    assert_match(/Title can\'t be blank/, @response.body)
+    
   end
   
   test "should error on description" do
@@ -98,6 +103,12 @@ class ProductsControllerTest < ActionController::TestCase
       }
     end
     
+    assert product = assigns(:product)
+    assert !product.valid?
+    product.errors.on(:description)
+    
+    assert_match(/Description can\'t be blank/, @response.body)
+    
   end
   
   test "should error on image format" do
@@ -109,6 +120,13 @@ class ProductsControllerTest < ActionController::TestCase
         :price        => '100'
       }
     end
+    
+    assert product = assigns(:product)
+    assert !product.valid?
+    product.errors.on(:image_url)
+    
+    assert_match(/Image url must be a url for image/, @response.body)
+    
   end
   
   test "should error on price less than .01" do
@@ -120,6 +138,13 @@ class ProductsControllerTest < ActionController::TestCase
         :price        => '.001'
       }
     end
+    
+    assert product = assigns(:product)
+    assert !product.valid?
+    product.errors.on(:price)
+    
+    assert_match(/Price should be atleast 0.01/, @response.body)
+    
   end
-  
+
 end
