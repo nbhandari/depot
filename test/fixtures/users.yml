@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: User1
+  hashed_password: MyString
+  salt: MyString
+
+two:
+  name: User2
+  hashed_password: MyString
+  salt: MyString
+
+test:
+  name: TestUser
+  hashed_password: MyString
+  salt: MyString
+
+testLogin:
+  name: LoginTestUser
+  hashed_password: <%= User.encrypted_password('pwd1', 'salt1') %>
+  salt: salt1
