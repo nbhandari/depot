@@ -74,25 +74,18 @@ class UsersControllerTest < ActionController::TestCase
   end
   
   test "delete last user" do
-    #~ delete all users, except for user 'test'
-    all_users = User.find(:all, :order => :name)
-    all_users.each do |user|
-      if user.id != users(:test).id  
-        assert_difference('User.count', -1) do
-          delete :destroy, :id => user.id
-        end
-        assert_redirected_to :action => :index
+    all_users = User.find(:all)
+    
+    assert all_users.length>1
+    
+    assert_raise(RuntimeError) do
+      loop do
+        all_users.first.destroy
+        all_users.shift
       end
     end
     
-    assert_equal 1, User.count
-    
-    assert_difference('User.count', 0) do
-        delete :destroy, :id => users(:test).id
-    end
-    
-    assert_equal "Can't delete last user", flash[:notice]
+    assert_equal 1, all_users.length
   end
-
   
 end
