@@ -5,3 +5,9 @@ one:
   address: Address1
   email: email1
   pay_type: cc
+
+one_info:
+  name: Name_info
+  address: Address_info
+  email: email_info
+  pay_type: cc

@@ -10,22 +10,22 @@
 <body id="store">
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Depot Store" %><!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || I18n.t('layout.title') %><!-- <label id="code.depot.e.title"/> -->
   </div>
   <div id="columns">
     <div id="side">
-      <a href="http://www....">Home</a><br />
-      <a href="http://www..../faq">Questions</a><br />
-      <a href="http://www..../news">News</a><br />
-      <a href="http://www..../contact">Contact</a><br />
+      <a href="http://www...."><%= I18n.t('layout.side.home') %></a><br />
+      <a href="http://www..../faq"><%= I18n.t('layout.side.questions') %></a><br />
+      <a href="http://www..../news"><%= I18n.t('layout.side.news') %></a><br />
+      <a href="http://www..../contact"><%= I18n.t('layout.side.contact') %></a><br />
       
       <% if session[:user_id] %>
         <br />
-        <%= link_to 'Orders', :controller => 'orders' %><br />
-        <%= link_to 'Products', :controller => 'products' %><br />
-        <%= link_to 'Users', :controller => 'users' %><br />
+        <%= link_to I18n.t('layout.side.orders'), :controller => 'orders' %><br />
+        <%= link_to I18n.t('layout.side.products'), :controller => 'products' %><br />
+        <%= link_to I18n.t('layout.side.users'), :controller => 'users' %><br />
         <br />
-        <%= link_to 'Logout', :controller => :admin, :action => 'logout' %>
+        <%= link_to I18n.t('layout.side.logout'), :controller => :admin, :action => 'logout' %>
       <% end %>
 
     </div>

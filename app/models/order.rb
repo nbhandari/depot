@@ -4,8 +4,11 @@ class Order < ActiveRecord::Base
   PAYMENT_TYPES = [
     # Displayed stored in db
     [ "Check" , "check" ],
-    [ "Credit card" , "cc" ],
-    [ "Purchase order" , "po" ]
+    [ "Credit Card" , "cc" ],
+    [ "Purchase Order" , "po" ]
+    #~ [ I18n.t(order.paytype.check) , "check" ],
+    #~ [ I18n.t(order.paytype.cc) , "cc" ],
+    #~ [ I18n.t(order.paytype.po) , "po" ]
   ]
   
   validates_presence_of :name, :address, :email, :pay_type

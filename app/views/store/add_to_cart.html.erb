@@ -1,4 +1,4 @@
-<div class="cart-title">Your Cart</div>
+<div class="cart-title"><%= I18n.t('cart.title') %></div>
   <table>
     <% for cart_item in @cart.items %>
       <tr>
@@ -14,5 +14,5 @@
     </tr>
   </table>
 
-<%= button_to "Checkout" , :action => :checkout %>
-<%= button_to "Empty cart" , :action => :empty_cart %>
+<%= button_to I18n.t('buttons.chkout') , :action => :checkout %>
+<%= button_to I18n.t('buttons.empty_cart') , :action => :empty_cart %>

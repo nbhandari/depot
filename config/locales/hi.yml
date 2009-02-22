@@ -1,0 +1,14 @@
+hi:
+  hello: "Salaam Namaste"
+
+  layout:
+    title: "Meri Dukaan"
+    side:
+      home: "Ghar"
+      questions: "Sawaal"
+      news: "Khabrein"
+      contact: "Sampark"
+      orders: "Orderaan"
+      products: "Vastuen"
+      users: "Grahak"
+      logout: "Bahar Niklo"
