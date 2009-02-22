@@ -12,3 +12,34 @@ hi:
       products: "Vastuen"
       users: "Grahak"
       logout: "Bahar Niklo"
+
+  store:
+    title: "Store Products for sale"
+
+  cart:
+    title: "Cart Contents"
+
+  order:
+    title: "Please enter your details"
+    name: "Name"
+    address: "Address"
+    email: "E-mail"
+    prompt: "Please select a type"
+    paytype: 
+      label: "Payment Type"
+      check: "Check"
+      cc: "Credit Card"
+      po: "Purchase Order"      
+
+  product:
+    heading: "Product Listing"
+    title: "Title"
+    description: "Description"
+    imgurl: "Image Url"
+    price: "Price (cents)"
+
+  buttons:
+    place_order: "Place Order"
+    add_to_cart: "Add 2 Cart"
+    chkout: "Checkout"
+    empty_cart: "Remove all items"
