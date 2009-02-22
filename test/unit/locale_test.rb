@@ -29,4 +29,10 @@ class LocaleTest < ActiveSupport::TestCase
     
     assert_equal "Meri Dukaan", I18n.t('layout.title')
   end
+  
+  test "default page title" do
+    #~ default locale is English
+    assert_equal "MY DEPOT", I18n.t('layout.title')
+  end
+
 end
