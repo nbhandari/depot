@@ -6126,3 +6126,2261 @@ Processing UsersController#update (for 0.0.0.0 at 2009-02-22 14:45:49) [PUT]
   [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'User1' AND "users".id <> 953125641) LIMIT 1[0m
 Redirected to actionindex
 Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:31:29', 2, 953125641, 2, '2009-02-23 02:31:29')[0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:31:29', 1, 996332877, 1, '2009-02-23 02:31:29')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;36;1mLineItem Load (0.0ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "price" = 1000, "updated_at" = '2009-02-23 02:31:29' WHERE "id" = 953125641[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:31:38) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:31:38) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:31:38) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+
+
+Processing AdminController#logout (for 0.0.0.0 at 2009-02-22 18:31:38) [POST]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) LIMIT 1[0m
+Redirected to actionlogin
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:31:38', 1, 953125641, 1, '2009-02-23 02:31:38')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:31:38) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:31:39', 1, 953125641, 1, '2009-02-23 02:31:39')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:31:39) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 50ms (View: 0, DB: 10) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (10.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:31:39', 1, 953125641, 1, '2009-02-23 02:31:39')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:31:39) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:31:39) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('http://example.com/foo.gif', '2009-02-23 02:31:39', 'awesome product', 100, 'awesome product description', '2009-02-23 02:31:39')[0m
+Redirected to #<Product:0x4701878>
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#destroy (for 0.0.0.0 at 2009-02-22 18:31:39) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 953125641[0m
+Redirected to http://test.host/products
+Completed in 10ms (DB: 10) | 302 Found [http://test.host/products/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:31:39) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:31:39) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:31:39) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>".001", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:31:39) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#edit (for 0.0.0.0 at 2009-02-22 18:31:39) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/edit
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-02-22 18:31:39) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2009-02-22 18:31:39) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#show (for 0.0.0.0 at 2009-02-22 18:31:39) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/show
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#update (for 0.0.0.0 at 2009-02-22 18:31:40) [PUT]
+  Parameters: {"product"=>{"title"=>"mega awesome title"}, "id"=>"953125641"}
+  [4;36;1mUser Load (20.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'mega awesome title' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (10.0ms)[0m   [0mUPDATE "products" SET "title" = 'mega awesome title', "updated_at" = '2009-02-23 02:31:40' WHERE "id" = 953125641[0m
+Redirected to #<Product:0x46c4770>
+Completed in 90ms (DB: 40) | 302 Found [http://test.host/products/953125641?product%5Btitle%5D=mega+awesome+title]
+  [4;36;1mProduct Load (11.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:31:40) [GET]
+  Parameters: {"id"=>"junk"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Invalid product id: junk
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:31:40) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+
+
+Processing StoreController#empty_cart (for 0.0.0.0 at 2009-02-22 18:31:41) [GET]
+
+
+Processing StoreController#index (for 0.0.0.0 at 2009-02-22 18:31:41) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 914358341[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 955064461[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 996332877[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:31:41) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:31:41) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:31:41) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to controlleradminactionlogin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-02-22 18:31:41) [POST]
+  Parameters: {"user"=>{"name"=>"NewUser", "password_confirmation"=>"pwd", "password"=>"pwd"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'NewUser') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "updated_at", "hashed_password", "created_at") VALUES('NewUser', '374449600.322202758788267', '2009-02-23 02:31:41', '2df408f9e0086e12ace9378d75a798362094d083', '2009-02-23 02:31:41')[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users?user%5Bname%5D=NewUser&user%5Bpassword%5D=pwd&user%5Bpassword_confirmation%5D=pwd]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:31:41) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-02-22 18:31:41) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/edit
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:31:41) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-02-22 18:31:41) [GET]
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-02-22 18:31:42) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-02-22 18:31:42) [PUT]
+  Parameters: {"user"=>{}, "id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'User1' AND "users".id <> 953125641) LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:43:38', 2, 953125641, 2, '2009-02-23 02:43:38')[0m
+  [4;36;1mLineItem Create (10.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:43:38', 1, 996332877, 1, '2009-02-23 02:43:38')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;36;1mLineItem Load (0.0ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "price" = 1000, "updated_at" = '2009-02-23 02:43:38' WHERE "id" = 953125641[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:43:47) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:43:47) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd2"}
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:43:47) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+
+
+Processing AdminController#logout (for 0.0.0.0 at 2009-02-22 18:43:47) [POST]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) LIMIT 1[0m
+Redirected to actionlogin
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:43:47', 1, 953125641, 1, '2009-02-23 02:43:47')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:43:47) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:43:48', 1, 953125641, 1, '2009-02-23 02:43:48')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:43:48) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 50ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:43:48', 1, 953125641, 1, '2009-02-23 02:43:48')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:43:48) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:43:48) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('http://example.com/foo.gif', '2009-02-23 02:43:48', 'awesome product', 100, 'awesome product description', '2009-02-23 02:43:48')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#destroy (for 0.0.0.0 at 2009-02-22 18:43:48) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 953125641[0m
+Redirected to http://test.host/products
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/products/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:43:48) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:43:48) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:43:48) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>".001", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:43:48) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#edit (for 0.0.0.0 at 2009-02-22 18:43:48) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/edit
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-02-22 18:43:48) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2009-02-22 18:43:48) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#show (for 0.0.0.0 at 2009-02-22 18:43:48) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#update (for 0.0.0.0 at 2009-02-22 18:43:49) [PUT]
+  Parameters: {"product"=>{"title"=>"mega awesome title"}, "id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (20.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'mega awesome title' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mProduct Update (0.0ms)[0m   [0;1mUPDATE "products" SET "title" = 'mega awesome title', "updated_at" = '2009-02-23 02:43:49' WHERE "id" = 953125641[0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:43:49) [GET]
+  Parameters: {"id"=>"junk"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Invalid product id: junk
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:43:49) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+
+
+Processing StoreController#empty_cart (for 0.0.0.0 at 2009-02-22 18:43:49) [GET]
+
+
+Processing StoreController#index (for 0.0.0.0 at 2009-02-22 18:43:50) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 914358341[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 955064461[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 996332877[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:43:50) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (10.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 10) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:43:50) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:43:50) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to controlleradminactionlogin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-02-22 18:43:50) [POST]
+  Parameters: {"user"=>{"name"=>"NewUser", "password_confirmation"=>"pwd", "password"=>"pwd"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'NewUser') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "updated_at", "hashed_password", "created_at") VALUES('NewUser', '374424800.0613654207628929', '2009-02-23 02:43:50', '4002998ee6b61997e5732cbe5896bd4e0a33b1d1', '2009-02-23 02:43:50')[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users?user%5Bname%5D=NewUser&user%5Bpassword%5D=pwd&user%5Bpassword_confirmation%5D=pwd]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:43:50) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Destroy (10.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 20) | 302 Found [http://test.host/users/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-02-22 18:43:50) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/edit
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:43:50) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-02-22 18:43:51) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering users/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-02-22 18:43:51) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-02-22 18:43:51) [PUT]
+  Parameters: {"user"=>{}, "id"=>"953125641"}
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'User1' AND "users".id <> 953125641) LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 10) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:49:03', 2, 953125641, 2, '2009-02-23 02:49:03')[0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:49:03', 1, 996332877, 1, '2009-02-23 02:49:03')[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;36;1mLineItem Load (0.0ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "price" = 1000, "updated_at" = '2009-02-23 02:49:03' WHERE "id" = 953125641[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Exists (10.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:49:11) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 20) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:49:11) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/admin/login?name=LoginTestUser&password=pwd2]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:49:11) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 10) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+
+
+Processing AdminController#logout (for 0.0.0.0 at 2009-02-22 18:49:11) [POST]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) LIMIT 1[0m
+Redirected to actionlogin
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:49:11', 1, 953125641, 1, '2009-02-23 02:49:11')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:49:11) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:49:11', 1, 953125641, 1, '2009-02-23 02:49:11')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:49:11) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 40ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:49:11', 1, 953125641, 1, '2009-02-23 02:49:11')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:49:11) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:49:11) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('http://example.com/foo.gif', '2009-02-23 02:49:11', 'awesome product', 100, 'awesome product description', '2009-02-23 02:49:11')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#destroy (for 0.0.0.0 at 2009-02-22 18:49:12) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 953125641[0m
+Redirected to http://test.host/products
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/products/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:49:12) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:49:12) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:49:12) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>".001", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=.001&product%5Btitle%5D=awesome+product]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:49:12) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#edit (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/edit
+Completed in 10ms (View: 10, DB: 10) | 200 OK [http://test.host/products/953125641/edit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 20ms (View: 20, DB: 0) | 200 OK [http://test.host/products]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://test.host/products/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#show (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/show
+Completed in 41ms (View: 20, DB: 0) | 200 OK [http://test.host/products/953125641]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#update (for 0.0.0.0 at 2009-02-22 18:49:12) [PUT]
+  Parameters: {"product"=>{"title"=>"mega awesome title"}, "id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'mega awesome title' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mProduct Update (0.0ms)[0m   [0;1mUPDATE "products" SET "title" = 'mega awesome title', "updated_at" = '2009-02-23 02:49:12' WHERE "id" = 953125641[0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  Parameters: {"id"=>"junk"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Invalid product id: junk
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/store/add_to_cart/junk]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/store/add_to_cart/953125641]
+
+
+Processing StoreController#empty_cart (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/store/empty_cart]
+
+
+Processing StoreController#index (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/store]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 914358341[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 955064461[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 996332877[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:49:12) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to controlleradminactionlogin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-02-22 18:49:12) [POST]
+  Parameters: {"user"=>{"name"=>"NewUser", "password_confirmation"=>"pwd", "password"=>"pwd"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'NewUser') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("name", "salt", "updated_at", "hashed_password", "created_at") VALUES('NewUser', '366515600.434880798965917', '2009-02-23 02:49:12', '636bdab3fb399b4aace5cd927cad4ddd7e6be876', '2009-02-23 02:49:12')[0m
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users?user%5Bname%5D=NewUser&user%5Bpassword%5D=pwd&user%5Bpassword_confirmation%5D=pwd]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:49:12) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users/953125641/edit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering users/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-02-22 18:49:12) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/show
+Completed in 10ms (View: 10, DB: 10) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-02-22 18:49:12) [PUT]
+  Parameters: {"user"=>{}, "id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'User1' AND "users".id <> 953125641) LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:50:50', 2, 953125641, 2, '2009-02-23 02:50:50')[0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:50:50', 1, 996332877, 1, '2009-02-23 02:50:50')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;36;1mLineItem Load (0.0ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "price" = 1000, "updated_at" = '2009-02-23 02:50:50' WHERE "id" = 953125641[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 11ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/admin/login?name=LoginTestUser&password=pwd2]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+
+
+Processing AdminController#logout (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) LIMIT 1[0m
+Redirected to actionlogin
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:50:58', 1, 953125641, 1, '2009-02-23 02:50:58')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:50:58', 1, 953125641, 1, '2009-02-23 02:50:58')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 40ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:50:58', 1, 953125641, 1, '2009-02-23 02:50:58')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('http://example.com/foo.gif', '2009-02-23 02:50:58', 'awesome product', 100, 'awesome product description', '2009-02-23 02:50:58')[0m
+Redirected to #<Product:0x47a9b18>
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#destroy (for 0.0.0.0 at 2009-02-22 18:50:58) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 953125641[0m
+Redirected to http://test.host/products
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/products/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/products?product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>".001", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=.001&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#edit (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/edit
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products/953125641/edit]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 30ms (View: 30, DB: 0) | 200 OK [http://test.host/products]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://test.host/products/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#show (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/show
+Completed in 50ms (View: 30, DB: 10) | 200 OK [http://test.host/products/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#update (for 0.0.0.0 at 2009-02-22 18:50:58) [PUT]
+  Parameters: {"product"=>{"title"=>"mega awesome title"}, "id"=>"953125641"}
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'mega awesome title' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "title" = 'mega awesome title', "updated_at" = '2009-02-23 02:50:58' WHERE "id" = 953125641[0m
+Redirected to #<Product:0x46a5e38>
+Completed in 10ms (DB: 20) | 302 Found [http://test.host/products/953125641?product%5Btitle%5D=mega+awesome+title]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  Parameters: {"id"=>"junk"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Invalid product id: junk
+Redirected to actionindex
+Completed in 11ms (DB: 0) | 302 Found [http://test.host/store/add_to_cart/junk]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/store/add_to_cart/953125641]
+
+
+Processing StoreController#empty_cart (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/store/empty_cart]
+
+
+Processing StoreController#index (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/store]
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 914358341[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 955064461[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 996332877[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:50:58) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 10) | 302 Found [http://test.host/users/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:50:58) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to controlleradminactionlogin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-02-22 18:50:58) [POST]
+  Parameters: {"user"=>{"name"=>"NewUser", "password_confirmation"=>"pwd", "password"=>"pwd"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'NewUser') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("name", "salt", "updated_at", "hashed_password", "created_at") VALUES('NewUser', '366384800.00179388549184545', '2009-02-23 02:50:58', 'c5161c96fc893d2fef12170ba1f586e11c60052e', '2009-02-23 02:50:58')[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users?user%5Bname%5D=NewUser&user%5Bpassword%5D=pwd&user%5Bpassword_confirmation%5D=pwd]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:50:59) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-02-22 18:50:59) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/953125641/edit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:50:59) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-02-22 18:50:59) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering users/new
+Completed in 10ms (View: 10, DB: 10) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-02-22 18:50:59) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/show
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-02-22 18:50:59) [PUT]
+  Parameters: {"user"=>{}, "id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'User1' AND "users".id <> 953125641) LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 10) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:52:50', 2, 953125641, 2, '2009-02-23 02:52:50')[0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:52:50', 1, 996332877, 1, '2009-02-23 02:52:50')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;36;1mLineItem Load (0.0ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "price" = 1000, "updated_at" = '2009-02-23 02:52:50' WHERE "id" = 953125641[0m
+  [4;36;1mProduct Exists (10.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/admin/login?name=LoginTestUser&password=pwd2]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+
+
+Processing AdminController#logout (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) LIMIT 1[0m
+Redirected to actionlogin
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:52:58', 1, 953125641, 1, '2009-02-23 02:52:58')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:52:58', 1, 953125641, 1, '2009-02-23 02:52:58')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 40ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:52:58', 1, 953125641, 1, '2009-02-23 02:52:58')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mProduct Create (10.0ms)[0m   [0;1mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('http://example.com/foo.gif', '2009-02-23 02:52:58', 'awesome product', 100, 'awesome product description', '2009-02-23 02:52:58')[0m
+Redirected to #<Product:0x47a9b18>
+Completed in 20ms (DB: 10) | 302 Found [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#destroy (for 0.0.0.0 at 2009-02-22 18:52:58) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Destroy (10.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 953125641[0m
+Redirected to http://test.host/products
+Completed in 10ms (DB: 10) | 302 Found [http://test.host/products/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 11ms (View: 11, DB: 0) | 200 OK [http://test.host/products?product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>".001", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=.001&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:52:58) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#edit (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/edit
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products/953125641/edit]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://test.host/products]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://test.host/products/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#show (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/show
+Completed in 50ms (View: 30, DB: 10) | 200 OK [http://test.host/products/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#update (for 0.0.0.0 at 2009-02-22 18:52:58) [PUT]
+  Parameters: {"product"=>{"title"=>"mega awesome title"}, "id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'mega awesome title' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "title" = 'mega awesome title', "updated_at" = '2009-02-23 02:52:58' WHERE "id" = 953125641[0m
+Redirected to #<Product:0x46a5e38>
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/products/953125641?product%5Btitle%5D=mega+awesome+title]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  Parameters: {"id"=>"junk"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Invalid product id: junk
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/store/add_to_cart/junk]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/store/add_to_cart/953125641]
+
+
+Processing StoreController#empty_cart (for 0.0.0.0 at 2009-02-22 18:52:58) [GET]
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/store/empty_cart]
+
+
+Processing StoreController#index (for 0.0.0.0 at 2009-02-22 18:52:59) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/store]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 914358341[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 955064461[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 996332877[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:52:59) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Destroy (10.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 20) | 302 Found [http://test.host/users/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:52:59) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:52:59) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to controlleradminactionlogin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-02-22 18:52:59) [POST]
+  Parameters: {"user"=>{"name"=>"NewUser", "password_confirmation"=>"pwd", "password"=>"pwd"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'NewUser') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("name", "salt", "updated_at", "hashed_password", "created_at") VALUES('NewUser', '366384800.481598391596828', '2009-02-23 02:52:59', '9691b45dcf482f88fec9ba0d07b60f9b42814d4b', '2009-02-23 02:52:59')[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users?user%5Bname%5D=NewUser&user%5Bpassword%5D=pwd&user%5Bpassword_confirmation%5D=pwd]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:52:59) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (10.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 20) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-02-22 18:52:59) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users/953125641/edit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:52:59) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-02-22 18:52:59) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering users/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-02-22 18:52:59) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-02-22 18:52:59) [PUT]
+  Parameters: {"user"=>{}, "id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'User1' AND "users".id <> 953125641) LIMIT 1[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:53:22', 2, 953125641, 2, '2009-02-23 02:53:22')[0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(953125641, '2009-02-23 02:53:22', 1, 996332877, 1, '2009-02-23 02:53:22')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;36;1mLineItem Load (0.0ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items".order_id = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 996332877) [0m
+  [4;35;1mOrder Load (10.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 953125641) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (10.0ms)[0m   [0mUPDATE "products" SET "price" = 1000, "updated_at" = '2009-02-23 02:53:22' WHERE "id" = 953125641[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (10.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'MyString1' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 20ms (View: 20, DB: 0) | 200 OK [http://test.host/admin/login?name=LoginTestUser&password=pwd2]
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"name"=>"LoginTestUser", "password"=>"pwd1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'LoginTestUser') LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 10) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+
+
+Processing AdminController#logout (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 955064461) LIMIT 1[0m
+Redirected to actionlogin
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/admin/login?name=LoginTestUser&password=pwd1]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:53:30', 1, 953125641, 1, '2009-02-23 02:53:30')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:53:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;36;1mLineItem Create (0.0ms)[0m   [0;1mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:53:30', 1, 953125641, 1, '2009-02-23 02:53:30')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:53:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 40ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 82955723) [0m
+  [4;35;1mLineItem Create (0.0ms)[0m   [0mINSERT INTO "line_items" ("order_id", "updated_at", "total_price", "product_id", "quantity", "created_at") VALUES(82955723, '2009-02-23 02:53:30', 1, 953125641, 1, '2009-02-23 02:53:30')[0m
+
+
+Processing InfoController#who_bought (for 0.0.0.0 at 2009-02-22 18:53:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN line_items ON orders.id = line_items.order_id WHERE (("line_items".product_id = 953125641)) [0m
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/info/who_bought/953125641]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.0ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_url", "updated_at", "title", "price", "description", "created_at") VALUES('http://example.com/foo.gif', '2009-02-23 02:53:30', 'awesome product', 100, 'awesome product description', '2009-02-23 02:53:30')[0m
+Redirected to #<Product:0x47a9b18>
+Completed in 20ms (DB: 0) | 302 Found [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#destroy (for 0.0.0.0 at 2009-02-22 18:53:30) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 953125641[0m
+Redirected to http://test.host/products
+Completed in 10ms (DB: 10) | 302 Found [http://test.host/products/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>"100"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo", "title"=>"awesome product", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 20ms (View: 10, DB: 10) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo&product%5Bprice%5D=100&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "title"=>"awesome product", "price"=>".001", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=.001&product%5Btitle%5D=awesome+product]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'awesome product') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 0.0.0.0 at 2009-02-22 18:53:30) [POST]
+  Parameters: {"product"=>{"image_url"=>"http://example.com/foo.gif", "price"=>"100", "description"=>"awesome product description"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/products?product%5Bdescription%5D=awesome+product+description&product%5Bimage_url%5D=http%3A%2F%2Fexample.com%2Ffoo.gif&product%5Bprice%5D=100]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#edit (for 0.0.0.0 at 2009-02-22 18:53:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/edit
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/products/953125641/edit]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#index (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://test.host/products]
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing ProductsController#new (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering products/new
+Completed in 21ms (View: 10, DB: 10) | 200 OK [http://test.host/products/new]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#show (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering products/show
+Completed in 50ms (View: 30, DB: 10) | 200 OK [http://test.host/products/953125641]
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing ProductsController#update (for 0.0.0.0 at 2009-02-22 18:53:31) [PUT]
+  Parameters: {"product"=>{"title"=>"mega awesome title"}, "id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+  [4;36;1mProduct Exists (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'mega awesome title' AND "products".id <> 953125641) LIMIT 1[0m
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "title" = 'mega awesome title', "updated_at" = '2009-02-23 02:53:31' WHERE "id" = 953125641[0m
+Redirected to #<Product:0x46a5e38>
+Completed in 20ms (DB: 10) | 302 Found [http://test.host/products/953125641?product%5Btitle%5D=mega+awesome+title]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  Parameters: {"id"=>"junk"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Invalid product id: junk
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/store/add_to_cart/junk]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+
+
+Processing StoreController#add_to_cart (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 10ms (View: 10, DB: 10) | 200 OK [http://test.host/store/add_to_cart/953125641]
+
+
+Processing StoreController#empty_cart (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/store/empty_cart]
+
+
+Processing StoreController#index (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  [4;36;1mProduct Load (10.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/store]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 914358341[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 955064461[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 996332877[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:53:31) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to controlleradminactionlogin
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-02-22 18:53:31) [POST]
+  Parameters: {"user"=>{"name"=>"NewUser", "password_confirmation"=>"pwd", "password"=>"pwd"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'NewUser') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("name", "salt", "updated_at", "hashed_password", "created_at") VALUES('NewUser', '367258600.00763487386515038', '2009-02-23 02:53:31', 'deff18914dcd1dc23f4aad74deed0dddc67421ae', '2009-02-23 02:53:31')[0m
+Redirected to actionindex
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users?user%5Bname%5D=NewUser&user%5Bpassword%5D=pwd&user%5Bpassword_confirmation%5D=pwd]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-02-22 18:53:31) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://test.host/users
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users/953125641/edit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+Rendering template within layouts/store
+Rendering users/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-02-22 18:53:31) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/store
+Rendering users/show
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-02-22 18:53:31) [PUT]
+  Parameters: {"user"=>{}, "id"=>"953125641"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 914358341) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'User1' AND "users".id <> 953125641) LIMIT 1[0m
+Redirected to actionindex
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/953125641?]

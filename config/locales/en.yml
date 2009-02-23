@@ -18,6 +18,10 @@ en:
 
   store:
     title: "Store Products for sale"
+    invalidprodmsg: "Invalid Product"
+    emptycartmsg: "Cart empty"
+    cartemptymsg: "Your cart is empty"
+    orderthanx: "Thank you for your order" 
 
   cart:
     title: "Cart Contents"
@@ -40,6 +44,8 @@ en:
     description: "Description"
     imgurl: "Image Url"
     price: "Price (cents)"
+    createsuccess: "Product was successfully created."
+    updatesuccess: "Product was successfully updated."
 
   buttons:
     place_order: "Place Order"

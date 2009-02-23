@@ -10,7 +10,7 @@ class StoreController < ApplicationController
       product = Product.find(params[:id])
     rescue ActiveRecord::RecordNotFound
       logger.error("Invalid product id: #{params[:id]}")
-      redirect_to_index "Invalid Product"
+      redirect_to_index I18n.t('store.invalidprodmsg')
     else
       @cart.add_product(product)
     end  
@@ -18,12 +18,12 @@ class StoreController < ApplicationController
   
   def empty_cart
     session[:cart] = nil
-    redirect_to_index "Cart empty"
+    redirect_to_index I18n.t('store.emptycartmsg')
   end
   
   def checkout
     if @cart.items.empty?
-      redirect_to_index("Your cart is empty" )
+      redirect_to_index I18n.t('store.cartemptymsg')
     else
       @order = Order.new
     end
@@ -34,7 +34,7 @@ class StoreController < ApplicationController
     @order.add_line_items_from_cart(@cart)
     if @order.save
       session[:cart] = nil
-      redirect_to_index("Thank you for your order" )
+      redirect_to_index I18n.t('store.orderthanx')
     else
       render :action => :checkout
     end
